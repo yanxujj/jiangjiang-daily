@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('https://cdn.jsdelivr.net/gh/yanxujj/jiangjiang-daily@main/sw.js', { scope: 'https://cdn.jsdelivr.net/gh/yanxujj/jiangjiang-daily@main/' })})}
