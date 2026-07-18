@@ -1,6 +1,26 @@
 <!doctype html>
 <html lang="zh-CN">
   <head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <script>
+      // 自动版本检查：检测 JS 文件名变化后自动刷新
+      (function () {
+        try {
+          var scripts = document.querySelectorAll('script[src*="/assets/index-"]');
+          if (!scripts.length) return;
+          var currentJs = scripts[0].getAttribute('src');
+          var stored = localStorage.getItem('__jj_current_js');
+          if (stored && stored !== currentJs) {
+            localStorage.setItem('__jj_current_js', currentJs);
+            location.reload();
+            return;
+          }
+          localStorage.setItem('__jj_current_js', currentJs);
+        } catch (e) {}
+      })();
+    </script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/jiangjiang-daily/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
